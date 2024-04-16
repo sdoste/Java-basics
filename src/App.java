@@ -6,7 +6,8 @@ public class App {
 
         //1- EJERCICIO CONDICIONALES JAVA
         System.out.println("¿Cuántos años tienes?");
-        int edad = Integer.parseInt(teclado.nextLine());
+        int edad = teclado.nextInt();
+        teclado.nextLine();
         if ((edad>0)&&(edad<6)){
             System.out.println("Estás todavía en la guardería.");
         } else if((edad>=6)&&(edad<12)){
@@ -35,12 +36,14 @@ public class App {
         System.out.println("¿Cómo se llama tu madre?");
         String nombreMadre = teclado.nextLine();
         System.out.println("¿Y cuántos años tiene tu madre?");
-        int edadMadre = Integer.parseInt(teclado.nextLine());
+        int edadMadre = teclado.nextInt();
+        teclado.nextLine();
 
         System.out.println("¿Cómo se llama tu padre?");
         String nombrePadre = teclado.nextLine();
         System.out.println("¿Y cuántos años tiene tu padre?");
-        int edadPadre = Integer.parseInt(teclado.nextLine());
+        int edadPadre = teclado.nextInt();
+
         float media = (edadMadre + edadPadre)/2;
 
         System.out.println("Tu madre se llama " + nombreMadre + " y tiene " + edadMadre + " años, y tu padre se llama " + nombrePadre + " y tiene " + edadPadre + " años, y la media de sus edades es " + media);
